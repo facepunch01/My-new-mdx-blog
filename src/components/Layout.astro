@@ -1,6 +1,12 @@
 ---
 import "../layouts/baseStyles.astro";
 import AstroNav from "../components/AstroNav.astro";
----    
-<AstroNav />
-<slot/>
+---
+<div class="max-h-screen">
+    <section class="sticky top-0 z-50">
+        <AstroNav />
+    </section>
+    <div class="absolute w-screen top-0">
+        <slot/>
+    </div>
+</div>    
